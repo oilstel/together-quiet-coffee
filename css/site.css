@@ -1,0 +1,94 @@
+/* Base — functional defaults only */
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, pre {
+    margin: 20px 0;
+    padding: 0;
+    word-wrap: break-word;
+}
+
+ul, ol {
+  margin: 0;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+audio {
+  display: block;
+}
+
+a {
+  color: inherit;
+  word-wrap: break-word;
+}
+
+.site-nav {
+  padding: 1rem 0;
+  padding-top: 0;
+}
+
+.site-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.5rem;
+}
+
+.site-nav a {
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+}
+
+.site-nav .active a {
+  font-weight: bold;
+}
+
+.site-meta {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.collaborator-avatar {
+  width: 1em;
+  height: 1em;
+  display: inline;
+  vertical-align: -0.125em;
+  margin-right: 0.2em;
+}
+
+.contributor-avatar {
+  display: none;
+  width: 1em;
+  height: 1em;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.starstar-badge {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 0.9em;
+  text-decoration: none;
+  opacity: 1 !important;
+  z-index: 9999;
+}
